@@ -1,24 +1,215 @@
 <!DOCTYPE html>
 <html>
+
+
+
   <head>
+  <meta charset="utf-8">
     <title>
       6BM
     </title>
-    <style>
-      .menu{
+    
+	<style>
+	body{
+	background-color: #25072e;
+	}
+	
+    .menu{
         color: #ec008c;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 6.7px;
+		font-family: "Helvetica";
       }
-        
+	 
+	.page-1{
+		background-image: url("background.svg");
+	  }
+	 
+	.page-2{
+		background: #25072e;
+	  }
+	  
+	 h1{
+	    color: #ec008c;
+		font-weight: bold;
+		font-size: 28px;
+		letter-spacing: 4.5px;
+		font-family: "OpenSans";
+		text-align: right;
+	 }
+	 
+	a:link {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:visited {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+		}
+
+	a:active {
+		color: #ffffff;
+		text-decoration: none;
+	} 
+	
+	.text-about{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "OpenSans";
+	}	
+	
+	.text-concerts{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 3.5px;
+		font-family: "OpenSans";
+	}	
+	
+	.text-contact{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "OpenSans";
+	}	
+	
+	.koncerty{
+	
+	}
+    </style>    
   </head>
+  
+  
+  
   <body>
-    <nav>
-      <div class="menu">
-        <div id="menu-home" class="menu">H O M E</div>
-        <div id="menu-about" class="menu">A B O U T</div>
-        <div id="menu-concerts" class="menu">C O N C E R T S</div>
-        <div id="menu-video" class="menu">V I D E O</div>
-        <div id="menu-photos" class="menu">P H O T O S</div>
-        <div id="menu-contact" class="menu">C O N T A C T</div>
-    </nav>
+      
+	  <nav>
+	  <div class="menu">
+		<div id="logo">
+		  <img src="logo.png">
+		  <br><br>
+		</div>
+        <div id="menu-home" class="menu"><a href="#page-home">HOME</a></div><br>
+        <div id="menu-about" class="menu"><a href="#page-about">ABOUT</a></div><br>
+        <div id="menu-concerts" class="menu"><a href="#page-concerts">CONCERTS</a></div><br>
+        <div id="menu-video" class="menu"><a href="#page-video">VIDEO</a></div><br>
+        <div id="menu-photos" class="menu"><a href="#page-photos">PHOTOS</a></div><br>
+      </div>
+	</nav>
+	
+	<address>
+	<img src="fb.svg"><br>
+	<img src="insta.svg"><br>
+	<img src="last.svg"><br>
+	<img src="yout.svg">
+	</address>
+	
+	<section id="page-home" class="page-1">
+		<div id="home" >
+		<img src="band-member01.png">
+		<img src="band-member02.png">
+		<img src="band-member03.png">
+		<img src="band-member04.png">
+		</div>
+	</section>
+	
+	<section id="page-about" class="page-2">
+		<h1>ABOUT</h1>
+		<br>
+		<div id="image-about" >
+			<img src="band01.jpg">
+		</div>
+		
+		<div id="text-about" class="text-about" >
+				<b>STRAIGHT FROM LUBLIN</b>
+				<br><br>
+				6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band member aim to convey emotions, reflexion but also hope.
+				<br><br>
+				They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. 
+				<br>
+				As for now they released their debut EP - TRINITY and they started working on their first full lenght album.
+		</div>
+	</section>
+		
+	<section id="page-concerts" class="page-1">
+			<h1>CONCERTS</h1>
+		
+		<div id="koncert1" class="koncerty" >
+			<img src="band02_WiechnikMarcin.jpg">
+			<div id="koncert1-text" class="text-concerts">
+			<b>20.12.2018</b><br>
+			Lublin, klub XXX
+			</div>
+			<button>BUY TICKET</button>
+		</div>
+		
+		<div id="koncert2" class="koncerty" >
+			<img src="band03_WiechnikMarcin.jpg">
+			<div id="koncert2-text" class="text-concerts">
+			<b>20.12.2018</b><br>
+			Warszawa, klub YYY
+			</div>
+			<button>BUY TICKET</button>
+		</div>
+		
+		<div id="koncert3" class="koncerty" >
+			<img src="band04_JakubBodys.jpg">
+			<div id="koncert3-text" class="text-concerts">
+			<b>20.12.2018</b><br>
+			Kraków, klub ZZZ
+			</div>
+			<button>BUY TICKET</button>
+		</div>
+		
+		<div id="koncert4" class="koncerty" >
+			<img src="band05_JakubBodys.jpg">
+			<div id="koncert4-text" class="text-concerts">
+			<b>20.12.2018</b><br>
+			Poznań, klub AAA
+			</div>
+			<button>BUY TICKET</button>
+		</div>	
+	</section>
+	
+	<section id="page-video" class="page-2">
+			<h1>VIDEO</h1>
+			<div id="film" >
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+	</section>
+
+	<section id="page-photos" class="page-1">
+		<h1>PHOTOS</h1>
+		<div id="photos" >
+			<img src="band05_JakubBodys.jpg">
+			<img src="band06_JakubBodys.jpg">
+			<img src="band07.jpg">
+			<img src="band08.jpg">
+			<img src="band09.jpg">
+			<img src="band10.jpg">
+			<img src="band11.jpg">
+			<img src="band04_JakubBodys.jpg">
+			<img src="band02_WiechnikMarcin.jpg">
+	</section>	
+	
+		<section id="page-contact" class="page-1">
+		<h1>CONTACT</h1>
+		<div id="contact" >
+		<img src="band12.jpg">
+			<div id="text-contact" class="text-contact">
+				Tel: 00 48 999 00 00 <br>
+				e-mail: 6bmband@mail.mail
+			</div>
+		</div>
+	</section>
+	
   </body>
 </html>    
+
