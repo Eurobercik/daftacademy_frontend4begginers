@@ -11,7 +11,8 @@
     
 	<style>
 	body{
-	background-color: #25072e;
+	background-color: rgb(24,4,33);
+	margin: 0px;
 	}
 	
     .menu{
@@ -20,14 +21,30 @@
 		font-size: 13px;
 		letter-spacing: 6.7px;
 		font-family: "Helvetica";
+		position: top;
       }
-	 
+	
+	.side{
+		position: fixed;
+	}
+	
 	.page-1{
 		background-image: url("background.svg");
+		background-size: cover;
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
 	  }
 	 
 	.page-2{
-		background: #25072e;
+		background: rgb(24,4,33);
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
 	  }
 	  
 	 h1{
@@ -37,6 +54,7 @@
 		letter-spacing: 4.5px;
 		font-family: "OpenSans";
 		text-align: right;
+		margin-right: 50px;
 	 }
 	 
 	a:link {
@@ -64,6 +82,14 @@
 		font-size: 13px;
 		letter-spacing: 1.5px;
 		font-family: "OpenSans";
+		width: 20%;
+		height: auto;
+		border: 20px;
+		border-color: rgb(37,7,46);
+		margin-left: 35%;
+		background: rgb(37,7,46);
+		position: relative;
+		bottom: 50px;
 	}	
 	
 	.text-concerts{
@@ -83,17 +109,48 @@
 	.koncerty{
 	
 	}
+	
+	address{
+		position: absolute;
+		bottom: 75px;
+	}
+
+	.side{
+		min-height: 100vh;
+		margin: 30px;
+		box-sizing: content-box;
+	}
+	
+	.r{
+		margin-left: 25%;
+	}
+	
+	.home{
+		position: absolute;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		box-sizing: content-box;
+	}
+	
+	.pink1{
+		box-shadow: 0px -5px #ec008c;
+	}
+	
+	.pink2{
+		box-shadow: 0px 5px #ec008c;
+	}
     </style>    
   </head>
   
   
   
   <body>
-      
+     
+	<div id="sidebar" class="side">
 	  <nav>
 	  <div class="menu">
 		<div id="logo">
-		  <img src="logo.png">
+		  <img src="logo.png"></img>
 		  <br><br>
 		</div>
         <div id="menu-home" class="menu"><a href="#page-home">HOME</a></div><br>
@@ -101,33 +158,35 @@
         <div id="menu-concerts" class="menu"><a href="#page-concerts">CONCERTS</a></div><br>
         <div id="menu-video" class="menu"><a href="#page-video">VIDEO</a></div><br>
         <div id="menu-photos" class="menu"><a href="#page-photos">PHOTOS</a></div><br>
+		<div id="menu-photos" class="menu"><a href="#page-contact">CONTACT</a></div><br>
       </div>
 	</nav>
 	
 	<address>
-	<img src="fb.svg"><br>
-	<img src="insta.svg"><br>
-	<img src="last.svg"><br>
-	<img src="yout.svg">
+	<img src="fb.svg"></img><br>
+	<img src="insta.svg"></img><br>
+	<img src="last.svg"></img><br>
+	<img src="yout.svg"></img>
 	</address>
+	</div>
 	
 	<section id="page-home" class="page-1">
-		<div id="home" >
-		<img src="band-member01.png">
-		<img src="band-member02.png">
-		<img src="band-member03.png">
-		<img src="band-member04.png">
+		<div id="home" class="r home">
+		<img width="20%" height="auto" src="band-member01.png"></img>
+		<img width="27%" height="auto" src="band-member02.png"></img>
+		<img width="20%" height="auto" src="band-member03.png"></img>
+		<img width="23%" height="auto" src="band-member04.png"></img>
 		</div>
 	</section>
 	
 	<section id="page-about" class="page-2">
-		<h1>ABOUT</h1>
+		<h1><BR><BR>ABOUT</h1>
 		<br>
-		<div id="image-about" >
-			<img src="band01.jpg">
+		<div id="image-about" class="r" style="margin-left: 40%">
+			<img width="70%" height="auto"  class="pink1" src="band01.jpg"></img>
 		</div>
 		
-		<div id="text-about" class="text-about" >
+		<div id="text-about" class="text-about pink2">
 				<b>STRAIGHT FROM LUBLIN</b>
 				<br><br>
 				6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band member aim to convey emotions, reflexion but also hope.
@@ -139,77 +198,122 @@
 	</section>
 		
 	<section id="page-concerts" class="page-1">
-			<h1>CONCERTS</h1>
-		
-		<div id="koncert1" class="koncerty" >
-			<img src="band02_WiechnikMarcin.jpg">
+			<h1><BR><BR>CONCERTS</h1>
+		<div class="r" style="margin-left: 50%">
+		<div id="koncert1" class="koncerty" style='width: 50%; float: left'>
 			<div id="koncert1-text" class="text-concerts">
-			<b>20.12.2018</b><br>
-			Lublin, klub XXX
+			<img width="90%" height="auto" class="pink2" src="band02_WiechnikMarcin.jpg"></img><br>
+			<div style='width: 50%; float: left'><b><br>20.12.2018</b><br>
+			Lublin, klub XXX<br><br>
 			</div>
-			<button>BUY TICKET</button>
+			<div style='width: 50%; float: left'>
+			<br><button>BUY TICKET</button>
+			</div>
+			</div>
 		</div>
 		
-		<div id="koncert2" class="koncerty" >
-			<img src="band03_WiechnikMarcin.jpg">
+		<div id="koncert2" class="koncerty" style='width: 50%; float: left'>
 			<div id="koncert2-text" class="text-concerts">
-			<b>20.12.2018</b><br>
-			Warszawa, klub YYY
+			<img width="90%" height="auto" class="pink2" src="band03_WiechnikMarcin.jpg"></img><br>
+			<div style='width: 50%; float: left'><b><br>20.12.2018</b><br>
+			Warszawa, klub XXX<br><br>
 			</div>
-			<button>BUY TICKET</button>
+			<div style='width: 50%; float: left'>
+			<br><button>BUY TICKET</button>
+			</div>
+			</div>
 		</div>
-		
-		<div id="koncert3" class="koncerty" >
-			<img src="band04_JakubBodys.jpg">
+		<div id="koncert3" class="koncerty" style='clear: both; width: 50%; float: left'>
 			<div id="koncert3-text" class="text-concerts">
-			<b>20.12.2018</b><br>
-			Kraków, klub ZZZ
+			<img width="90%" height="auto" class="pink2" src="band04_JakubBodys.jpg"></img><br>
+			<div style='width: 50%; float: left'><b><br>20.12.2018</b><br>
+			Kraków, klub XXX<br><br>
 			</div>
-			<button>BUY TICKET</button>
+			<div style='width: 50%; float: left'>
+			<br><button>BUY TICKET</button>
+			</div>
+			</div>
 		</div>
 		
-		<div id="koncert4" class="koncerty" >
-			<img src="band05_JakubBodys.jpg">
+		<div id="koncert4" class="koncerty" style='width: 50%; float: left'>
 			<div id="koncert4-text" class="text-concerts">
-			<b>20.12.2018</b><br>
-			Poznań, klub AAA
+			<img width="90%" height="auto" class="pink2" src="band05_JakubBodys.jpg"></img><br>
+			<div style='width: 50%; float: left'><b><br>20.12.2018</b><br>
+			Poznań, klub XXX<br><br>
 			</div>
-			<button>BUY TICKET</button>
+			<div style='width: 50%; float: left'>
+			<br><button>BUY TICKET</button>
+			</div>
+			</div>
 		</div>	
+		</div>
 	</section>
 	
-	<section id="page-video" class="page-2">
-			<h1>VIDEO</h1>
-			<div id="film" >
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<section id="page-video" class="page-2" >
+			<h1><BR><BR>VIDEO</h1>
+			<div id="film" class="r" >
+			<iframe class="pink1" width="840" height="473" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 	</section>
 
-	<section id="page-photos" class="page-1">
-		<h1>PHOTOS</h1>
-		<div id="photos" >
-			<img src="band05_JakubBodys.jpg">
-			<img src="band06_JakubBodys.jpg">
-			<img src="band07.jpg">
-			<img src="band08.jpg">
-			<img src="band09.jpg">
-			<img src="band10.jpg">
-			<img src="band11.jpg">
-			<img src="band04_JakubBodys.jpg">
-			<img src="band02_WiechnikMarcin.jpg">
+	<section id="page-photos" class="page-1" >
+		<h1><BR><BR>PHOTOS</h1>
+		<div id="photos" class="r" style="margin-left: 40%; margin-right: 50px">
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band05_JakubBodys.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band06_JakubBodys.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band07.jpg"></img><br><br>
+			</div>
+			<br>
+			<div style='clear: both; width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band08.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band09.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band10.jpg"></img><br><br>
+			</div>
+			<div style='clear: both; width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band11.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band04_JakubBodys.jpg"></img>
+			</div>
+			<div style='width: 33%; float: left'>
+			<img width="90%" height="auto" class="pink1" src="band02_WiechnikMarcin.jpg"></img>
+			</div>
 	</section>	
 	
-		<section id="page-contact" class="page-1">
-		<h1>CONTACT</h1>
-		<div id="contact" >
-		<img src="band12.jpg">
-			<div id="text-contact" class="text-contact">
-				Tel: 00 48 999 00 00 <br>
-				e-mail: 6bmband@mail.mail
+		<section id="page-contact" class="page-2" >
+		<h1><BR><BR>CONTACT</h1>
+		<div id="contact" class="r">
+			<div id="image-contact" style='width: 50%; float: left'>
+			<img width="90%" height="auto" src="band12.jpg"></img>
 			</div>
+			<div id="text-contact" class="text-contact" style='width: 50%; float: left'>
+				<div style='margin-top: 25%'>
+					Tel: 00 48 999 00 00 <br>
+					e-mail: 6bmband@mail.mail
+				</div>
+			</div>
+		<!--Nie wiem jakim cudem o nim ostatnio zapomniałem-->	
+		<div id="form" class="text-contact" style='clear: both'>
+			<br>
+			Email:<br>
+			<form>
+			<input type="text"><br>
+			Topic:<br>
+			<input type="text">
+			<br><br>
+			<input type="submit" value="CONTACT US!"></input></form><br>
+		</div>
 		</div>
 	</section>
 	
   </body>
 </html>    
-
