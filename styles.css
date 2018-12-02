@@ -1,4 +1,6 @@
 	@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900);
+
+@media screen and (min-width: 1301px) {
 	body{
 	background-image: url("background.svg");
 		background-size: cover;
@@ -17,6 +19,22 @@
 	
 	.side{
 		position: fixed;
+	}
+	
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	}
+
+	.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:80%;
+	height:60%;
 	}
 	
 	/*Podział na page-1 i page-2 jest dlatego, że niektóre podstrony miały inne tło od innych w poprzednich zadaniach domowych. Na wszelki wypadek zostawiam to tak jak było, żeby można było szybko wrócić do poprzedniego efektu*/
@@ -53,6 +71,16 @@
 		font-weight: bolder;
 	 }
 	 
+	.muzycy{
+		height: 20vh; 
+		width: 25%; 
+		text-align: center; 
+		display: flex;  
+		flex-wrap: wrap;   
+		flex-direction: column; 
+		justify-content: center
+	}
+	
 	a:link {
 		color: #ec008c;
 		text-decoration: none;
@@ -77,6 +105,16 @@
 		color: rgb(204,200,255);
 		font-size: 18px;
 		font-weight: bold;
+	}
+	
+	.bolded2 {
+		color: rgb(204,200,255);
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 4.5px; 
+		text-align: left;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	
 	.text-about{
@@ -134,8 +172,16 @@
 		box-sizing: content-box;
 	}
 	
-	.r{
+	.r25{
 		margin-left: 25%;
+	}
+	
+	.r30{
+		margin-left: 30%;
+	}
+	
+	.r40{
+		margin-left: 40%;
 	}
 	
 	.home{
@@ -176,3 +222,726 @@
 		border: none;
 		border-radius: 4px;
 	}
+	
+	.concert-flex{
+		display: flex;  
+		flex-wrap: wrap; 
+		justify-content: flex-end; 
+		align-content: space-between;
+	}
+	
+	.w35{
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1301px) {
+	body{
+	background-image: url("background.svg");
+		background-size: cover;
+		background-attachment: fixed;
+	margin: 0px;
+	}
+	
+    .menu{
+        color: #ec008c;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 6.7px;
+		font-family: "Helvetica";
+		position: top;
+      }
+	
+	.side{
+		position: fixed;
+	}
+	
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	}
+
+	.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:80%;
+	height:60%;
+	}
+	
+	/*Podział na page-1 i page-2 jest dlatego, że niektóre podstrony miały inne tło od innych w poprzednich zadaniach domowych. Na wszelki wypadek zostawiam to tak jak było, żeby można było szybko wrócić do poprzedniego efektu*/
+	.page-1{
+		/*
+		background-image: url("background.svg");
+		background-size: cover;
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	 
+	.page-2{
+		/*
+		background: rgb(24,4,33);
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	  
+	 h1{
+	    color: #ec008c;
+		font-size: 28px;
+		letter-spacing: 4.5px;
+		font-family: "Open Sans";
+		text-align: right;
+		margin-right: 50px;
+		font-weight: bolder;
+	 }
+	 
+	.muzycy{
+		height: 20vh; 
+		width: 25%; 
+		text-align: center; 
+		display: flex;  
+		flex-wrap: wrap;   
+		flex-direction: column; 
+		justify-content: center
+	}
+	
+	a:link {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:visited {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+		}
+
+	a:active {
+		color: #ffffff;
+		text-decoration: none;
+	} 
+	
+	.bolded {
+		color: rgb(204,200,255);
+		font-size: 15px;
+		font-weight: bold;
+	}
+	
+	.bolded2 {
+		color: rgb(204,200,255);
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 4.5px; 
+		text-align: left
+	}
+	
+	.text-about{
+		color: rgba(204,200,255,0.8);
+		font-size: 11px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		width: 30%;
+		height: auto;
+		border: 220px;
+		border-color: rgb(37,7,46);
+		margin-left: 35%;
+		background: rgb(37,7,46);
+		position: relative;
+		bottom: 150px;
+		padding: 25px;
+	}	
+	
+	.instruments{
+		color: rgba(204,200,255,0.8);
+		font-size: 13px;
+		letter-spacing: 3px;
+		font-family: "Open Sans";
+		line-height: 25px;
+		text-align: left;
+		font-weight: normal;
+	}
+	.text-concerts{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 3.5px;
+		font-family: "Open Sans";
+	}	
+	
+	.text-contact{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		line-height: 25px;
+		font-family: "Open Sans";
+	}	
+	
+	.koncerty{
+	
+	}
+	
+	address{
+		position: absolute;
+		bottom: 75px;
+	}
+
+	.side{
+		min-height: 100vh;
+		margin: 30px;
+		box-sizing: content-box;
+	}
+	
+	.r25{
+		margin-left: 25%;
+	}
+	
+	.r30{
+		margin-left: 30%;
+	}
+	
+	.r40{
+		margin-left: 40%;
+	}
+	
+	.home{
+		position: absolute;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		box-sizing: content-box;
+		font-family: "Open Sans";
+	}
+	
+	.pink1{
+		box-shadow: 0px -5px #ec008c;
+	}
+	
+	.pink2{
+		box-shadow: 0px 5px #ec008c;
+	} 
+	
+	.przycisk{
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	.formularz{
+		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
+		padding: 4px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+	.concert-flex{
+		display: flex;  
+		flex-wrap: wrap; 
+		justify-content: flex-end; 
+		align-content: space-between;
+	}
+	
+	.w35{
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 1001px) {
+	body{
+	background-image: url("background.svg");
+		background-size: cover;
+		background-attachment: fixed;
+	margin: 0px;
+	}
+	
+    .menu{
+        color: #ec008c;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 6.7px;
+		font-family: "Helvetica";
+		display: flex; 
+		justify-content: space-around;
+		align-items: center;
+      }
+	
+	.side{
+		border: none;
+		margin: 0px;
+		padding: 0px;
+		position: fixed;
+		padding-top: 10px;
+		width: 100%;
+		background-color: rgba(37,7,46,0.8);
+		bottom: 0;
+		z-index:1;
+		box-shadow: 0px -5px rgba(236,0,140,0.8);
+	}
+	
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	}
+
+	.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:80%;
+	height:60%;
+	}
+	
+	/*Podział na page-1 i page-2 jest dlatego, że niektóre podstrony miały inne tło od innych w poprzednich zadaniach domowych. Na wszelki wypadek zostawiam to tak jak było, żeby można było szybko wrócić do poprzedniego efektu*/
+	.page-1{
+		/*
+		background-image: url("background.svg");
+		background-size: cover;
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	 
+	.page-2{
+		/*
+		background: rgb(24,4,33);
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	  
+	 h1{
+	    color: #ec008c;
+		font-size: 28px;
+		letter-spacing: 4.5px;
+		font-family: "Open Sans";
+		text-align: right;
+		margin-right: 50px;
+		font-weight: bolder;
+	 }
+	 
+	.muzycy{
+		height: 20vh; 
+		width: 25%; 
+		text-align: center; 
+		display: flex;  
+		flex-wrap: wrap;   
+		flex-direction: column; 
+		justify-content: center
+	}
+	
+	a:link {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:visited {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+		}
+
+	a:active {
+		color: #ffffff;
+		text-decoration: none;
+	} 
+	
+	.bolded {
+		color: rgb(204,200,255);
+		font-size: 13px;
+		font-weight: bold;
+	}
+	
+	.bolded2 {
+		color: rgb(204,200,255);
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 4.5px; 
+		text-align: left
+	}
+	
+	.text-about{
+		color: rgba(204,200,255,0.8);
+		font-size: 10px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		width: 30%;
+		height: auto;
+		border: 20px;
+		border-color: rgb(37,7,46);
+		margin-left: 35%;
+		background: rgba(37,7,46,0.8);
+		position: relative;
+		bottom: 200px;
+		padding: 30px;
+	}	
+	
+	.instruments{
+		color: rgba(204,200,255,0.8);
+		font-size: 13px;
+		letter-spacing: 3px;
+		font-family: "Open Sans";
+		line-height: 25px;
+		text-align: left;
+		font-weight: normal;
+	}
+	.text-concerts{
+		color: #ccc8ff;
+		font-size: 10px;
+		letter-spacing: 2.5px;
+		font-family: "Open Sans";
+	}	
+	
+	.text-contact{
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		line-height: 25px;
+		font-family: "Open Sans";
+	}	
+	
+	.koncerty{
+	
+	}
+	
+	address{
+	}
+	
+	.r25{
+		margin-left: 5%;
+	}
+	
+	.r30{
+		margin-left: 5%;
+	}
+	
+	.r40{
+		margin-left: 5%;
+	}
+	
+	.home{
+		position: absolute;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		box-sizing: content-box;
+		font-family: "Open Sans";
+	}
+	
+	.pink1{
+		box-shadow: 0px -5px #ec008c;
+	}
+	
+	.pink2{
+		box-shadow: 0px 5px #ec008c;
+	} 
+	
+	.przycisk{
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 10px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	.formularz{
+		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
+		padding: 4px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+	.concert-flex{
+		display: flex;  
+		flex-wrap: wrap; 
+		justify-content: flex-start; /*Ponieważ w wersji mobilnej strona nie ma marginesu, nie ma potrzeby by koncerty układały się od prawej*/
+		align-content: space-between;
+	}
+	
+	.w35{
+		width: 50%;
+	}
+		.mobile-space{
+		height: 400px;
+	}
+}
+
+
+
+@media screen and (max-width: 501px) {
+	body{
+	background-image: url("background.svg");
+		background-size: cover;
+		background-attachment: fixed;
+	margin: 0px;
+	}
+	
+     .menu{
+        color: #ec008c;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 4px;
+		font-family: "Helvetica";
+		display: flex; 
+		justify-content: space-around;
+		align-items: center;
+      }
+	
+	.side{
+		border: none;
+		margin: 0px;
+		padding: 0px;
+		position: fixed;
+		padding-top: 10px;
+		width: 100%;
+		background-color: rgba(37,7,46,0.8);
+		bottom: 0;
+		z-index:1;
+		box-shadow: 0px -5px rgba(236,0,140,0.8);
+	}
+	
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	}
+
+	.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:80%;
+	height:60%;
+	}
+	
+	/*Podział na page-1 i page-2 jest dlatego, że niektóre podstrony miały inne tło od innych w poprzednich zadaniach domowych. Na wszelki wypadek zostawiam to tak jak było, żeby można było szybko wrócić do poprzedniego efektu*/
+	.page-1{
+		/*
+		background-image: url("background.svg");
+		background-size: cover;
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	 
+	.page-2{
+		/*
+		background: rgb(24,4,33);
+		*/
+		margin: 0px;
+		border: 0px;
+		width: 100%;
+		min-height: 100vh;
+		box-sizing: content-box;
+	  }
+	  
+	 h1{
+	    color: #ec008c;
+		font-size: 20px;
+		letter-spacing: 4.5px;
+		font-family: "Open Sans";
+		text-align: right;
+		margin-right: 50px;
+		font-weight: bolder;
+	 }
+	 
+	.muzycy{
+		height: 20vh; 
+		width: 25%; 
+		text-align: center; 
+		display: flex;  
+		flex-wrap: wrap;   
+		flex-direction: column; 
+		justify-content: center
+	}
+	
+	a:link {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:visited {
+		color: #ec008c;
+		text-decoration: none;
+		}
+
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+		}
+
+	a:active {
+		color: #ffffff;
+		text-decoration: none;
+	} 
+	
+	.bolded {
+		color: rgb(204,200,255);
+		font-size: 9px;
+		font-weight: bold;
+	}
+	
+	.bolded2 {
+		color: rgb(204,200,255);
+		font-size: 9px;
+		font-weight: bold;
+		letter-spacing: 2px; 
+		text-align: left
+	}
+	
+	.text-about{
+		color: rgba(204,200,255,0.8);
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		width: 50%;
+		height: auto;
+		border: 20px;
+		border-color: rgb(37,7,46);
+		margin-left: 35%;
+		background: rgba(37,7,46,0.8);
+		position: relative;
+		bottom: 100px;
+		padding: 30px;
+	}	
+	
+	.instruments{
+		color: rgba(204,200,255,0.8);
+		font-size: 7px;
+		letter-spacing: 2px;
+		font-family: "Open Sans";
+		line-height: 25px;
+		text-align: left;
+		font-weight: normal;
+	}
+	.text-concerts{
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 2.5px;
+		font-family: "Open Sans";
+	}	
+	
+	.text-contact{
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		line-height: 10px;
+		font-family: "Open Sans";
+	}	
+	
+	.koncerty{
+	
+	}
+	
+	.r25{
+		margin-left: 5%;
+	}
+	
+	.r30{
+		margin-left: 5%;
+	}
+	
+	.r40{
+		margin-left: 5%;
+	}
+	
+	.home{
+		position: absolute;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		box-sizing: content-box;
+		font-family: "Open Sans";
+	}
+	
+	.pink1{
+		box-shadow: 0px -5px #ec008c;
+	}
+	
+	.pink2{
+		box-shadow: 0px 5px #ec008c;
+	} 
+	
+	.przycisk{
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 4px 12px;
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	.formularz{
+		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
+		padding: 3px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+	.concert-flex{
+		display: flex;  
+		flex-wrap: wrap; 
+		justify-content: flex-start; /*Ponieważ w wersji mobilnej strona nie ma marginesu, nie ma potrzeby by koncerty układały się od prawej*/
+		align-content: space-between;
+	}
+	
+	.w35{
+		width: 50%;
+	}
+	
+	.mobile-space{
+		height: 350px;
+	}
+}
