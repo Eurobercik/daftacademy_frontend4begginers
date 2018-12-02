@@ -5,6 +5,7 @@
 
   <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>
       6BM
     </title>
@@ -19,44 +20,47 @@
 	  <nav>
 	  <div class="menu">
 		<div id="logo">
-		  <img src="logo.png"></img>
+		  <img src="logo.png" width="100%"></img>
 		  <br><br>
 		</div>
-        <div id="menu-home" class="menu"><a href="#page-home">HOME</a></div><br>
-        <div id="menu-about" class="menu"><a href="#page-about">ABOUT</a></div><br>
-        <div id="menu-concerts" class="menu"><a href="#page-concerts">CONCERTS</a></div><br>
-        <div id="menu-video" class="menu"><a href="#page-video">VIDEO</a></div><br>
-        <div id="menu-photos" class="menu"><a href="#page-photos">PHOTOS</a></div><br>
-		<div id="menu-photos" class="menu"><a href="#page-contact">CONTACT</a></div><br>
+		<div>
+			<div id="menu-home" class="menu"><a href="#page-home">HOME</a></div><br>
+			<div id="menu-about" class="menu"><a href="#page-about">ABOUT</a></div><br>
+			<div id="menu-concerts" class="menu"><a href="#page-concerts">CONCERTS</a></div><br>
+			<div id="menu-video" class="menu"><a href="#page-video">VIDEO</a></div><br>
+			<div id="menu-photos" class="menu"><a href="#page-photos">PHOTOS</a></div><br>
+			<div id="menu-photos" class="menu"><a href="#page-contact">CONTACT</a></div><br>
+		</div>
+		<div>
+			<address>
+				<img src="fb.svg" width="100%"></img><br>
+				<img src="insta.svg" width="100%"></img><br>
+				<img src="last.svg" width="100%"></img><br>
+				<img src="yout.svg" width="100%"></img>
+			</address>
+		</div>
       </div>
 	</nav>
-	
-	<address>
-	<img src="fb.svg"></img><br>
-	<img src="insta.svg"></img><br>
-	<img src="last.svg"></img><br>
-	<img src="yout.svg"></img>
-	</address>
 	</div>
 	
 	<section id="page-home" class="page-1">
-		<div id="home" class="r home ">
+		<div id="home" class="r25 home ">
 		<img width="20%" height="auto" src="band-member01.png"></img>
 		<img width="27%" height="auto" src="band-member02.png"></img>
 		<img width="20%" height="auto" src="band-member03.png"></img>
 		<img width="23%" height="auto" src="band-member04.png"></img>
 			<div style="display: flex;  flex-wrap: wrap; justify-content: space-between">
-				<div style='height: 20vh; width: 25%; text-align: center; display: flex;  flex-wrap: wrap;   flex-direction: column; justify-content: center'>
-					<div class="bolded" style="letter-spacing: 4.5px; font-size: 15px; text-align: left">KAMIL ZGONDEK<br><div class="instruments">Keyboard</div></div>
+				<div class="muzycy">
+					<div class="bolded2">KAMIL ZGONDEK&nbsp;&nbsp;<br><div class="instruments">Keyboard</div></div>
 				</div>
-				<div style='height: 20vh; width: 25%; text-align: center; display: flex;  flex-wrap: wrap;   flex-direction: column; justify-content: center'>
-					<div class="bolded" style="letter-spacing: 4.5px; font-size: 15px; text-align: left">ŁUKASZ FURMAN<br><div class="instruments">Vocals</div></div>
+				<div class="muzycy">
+					<div class="bolded2">ŁUKASZ FURMAN&nbsp;&nbsp;<br><div class="instruments">Vocals</div></div>
 				</div>
-				<div style='height: 20vh; width: 25%; text-align: center; display: flex;  flex-wrap: wrap;   flex-direction: column; justify-content: center'>
-					<div class="bolded" style="letter-spacing: 4.5px; font-size: 15px; text-align: left">KAMIL MAJEWSKI<br><div class="instruments">Drums</div></div>
+				<div class="muzycy">
+					<div class="bolded2">KAMIL MAJEWSKI&nbsp;&nbsp;<br><div class="instruments">Drums</div></div>
 				</div>
-				<div style='height: 20vh; width: 25%; text-align: center; display: flex;  flex-wrap: wrap;   flex-direction: column; justify-content: center'>
-					<div class="bolded" style="letter-spacing: 4.5px; font-size: 15px; text-align: left">DANIEL CAJZER<br><div class="instruments">Bass Guitar</div></div>
+				<div class="muzycy">
+					<div class="bolded2">DANIEL CAJZER&nbsp;&nbsp;<br><div class="instruments">Bass Guitar</div></div>
 				</div>
 			</div>
 		</div>
@@ -65,7 +69,7 @@
 	<section id="page-about" class="page-2">
 		<h1><BR><BR>ABOUT</h1>
 		<br>
-		<div id="image-about" class="r" style="margin-left: 40%">
+		<div id="image-about" class="r40" >
 			<img width="70%" height="auto"  class="pink1" src="band01.jpg"></img>
 		</div>
 		
@@ -82,8 +86,8 @@
 		
 	<section id="page-concerts" class="page-1">
 			<h1><BR><BR>CONCERTS</h1>
-		<div style="margin-left: 30%; display: flex;  flex-wrap: wrap; justify-content: flex-end; align-content: space-between;">
-		<div id="koncert1" class="koncerty" style='width: 35%'>
+		<div class="r30 concert-flex">
+		<div id="koncert1" class="koncerty w35">
 			<div id="koncert1-text" class="text-concerts">
 			<img width="90%" height="auto" class="pink2" src="band02_WiechnikMarcin.jpg"></img><br>
 				<div style="display: flex;  flex-wrap: wrap;">
@@ -97,7 +101,7 @@
 			</div>
 		</div>
 		
-		<div id="koncert2" class="koncerty" style='width: 35%'>
+		<div id="koncert2" class="koncerty w35">
 			<div id="koncert2-text" class="text-concerts">
 			<img width="90%" height="auto" class="pink2" src="band03_WiechnikMarcin.jpg"></img><br>
 			<div style="display: flex;  flex-wrap: wrap;">
@@ -111,7 +115,7 @@
 			</div>
 		</div>
 		
-		<div id="koncert3" class="koncerty" style='width: 35%'>
+		<div id="koncert3" class="koncerty w35">
 			<div id="koncert3-text" class="text-concerts">
 			<img width="90%" height="auto" class="pink2" src="band04_JakubBodys.jpg"></img><br>
 			<div style="display: flex;  flex-wrap: wrap;">
@@ -125,7 +129,7 @@
 			</div>
 		</div>
 		
-		<div id="koncert4" class="koncerty" style='width: 35%'>
+		<div id="koncert4" class="koncerty w35">
 			<div id="koncert4-text" class="text-concerts">
 			<img width="90%" height="auto" class="pink2" src="band05_JakubBodys.jpg"></img><br>
 			<div style="display: flex;  flex-wrap: wrap;">
@@ -143,14 +147,14 @@
 	
 	<section id="page-video" class="page-2" >
 			<h1><BR><BR>VIDEO</h1>
-			<div id="film" class="r" >
-			<iframe class="pink1" width="840" height="473" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div id="film" class="r25 video-container" >
+			<iframe class="pink1" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 	</section>
 
 	<section id="page-photos" class="page-1" >
 		<h1><BR><BR>PHOTOS</h1>
-		<div id="photos" class="r" style="margin-left: 40%; margin-right: 50px; display: flex;  flex-wrap: wrap; justify-content: flex-end; align-content: space-between;">
+		<div id="photos" class="r40" style="margin-right: 50px; display: flex;  flex-wrap: wrap; justify-content: flex-end; align-content: space-between;">
 			<div style='width: 33%'>
 			<img width="90%" height="auto" class="pink1" src="band05_JakubBodys.jpg"></img>
 			</div>
@@ -183,7 +187,7 @@
 	
 		<section id="page-contact" class="page-2" >
 		<h1><BR><BR>CONTACT</h1>
-		<div id="contact" class="r" style="display: flex;  flex-wrap: wrap;">
+		<div id="contact" class="r25" style="display: flex;  flex-wrap: wrap;">
 			<div id="image-contact" style='width: 50%';>
 			<img width="90%" height="auto" src="band12.jpg"></img>
 			</div>
@@ -193,7 +197,7 @@
 					e-mail: 6bmband@mail.mail
 				</div>
 			</div>
-		<div id="form" class="text-contact" style='clear: both'>
+		<div id="form" class="text-contact">
 			<br>
 			Email:<br>
 			<form>
@@ -201,7 +205,12 @@
 			Topic:<br>
 			<input type="text" class="formularz">
 			<br><br>
-			<input type="submit" value="CONTACT US!" class="przycisk"></input></form><br>
+			<input type="submit" value="CONTACT US!" class="przycisk"></input></form>
+		</div>
+		<div class="mobile-space">
+		<!-- Chcę uniknąć sytuacji, w której w wersji mobilnej użytkownik ma tak niski ekran, że menu na dole zasłania mu przycisk "contact us", a strony nie da się już niżej przewinąć, dlatego zostawiam dodatkową przestrzeń pod tym przyciskiem. Nawet jeśli użytkownik zjedzie na sam dół strony, pusta przestrzeń będzie zajęta przez menu.
+		
+		W wersji komputerowej ten div nie ma żadnych rozmiarów, bo menu jest po boku i zawsze da się kliknąć na przycisk "contact us" -->
 		</div>
 		</div>
 	</section>
