@@ -61,44 +61,44 @@
 		transition: all 0.5s;
 	}
 	
-	.img1:hover{
+	.imgbox1:hover .img1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img2:hover{
+	.imgbox2:hover .img2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img3:hover{
+	.imgbox3:hover .img3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img4:hover{
+	.imgbox4:hover .img4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox1:hover .imgtext1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox2:hover .imgtext2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox3:hover .imgtext3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox4:hover .imgtext4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	
@@ -425,7 +425,6 @@
 		position: top;
       }
 	
-		
 	.imgtext1{
 		opacity: 0;
 		transition: all 0.5s;
@@ -466,44 +465,44 @@
 		transition: all 0.5s;
 	}
 	
-	.img1:hover{
+	.imgbox1:hover .img1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img2:hover{
+	.imgbox2:hover .img2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img3:hover{
+	.imgbox3:hover .img3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img4:hover{
+	.imgbox4:hover .img4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox1:hover .imgtext1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox2:hover .imgtext2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox3:hover .imgtext3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox4:hover .imgtext4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.hoverimg{
@@ -873,54 +872,46 @@
 		transition: all 0.5s;
 	}
 	
-	.img1:hover{
+	.imgbox1:hover .img1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img2:hover{
+	.imgbox2:hover .img2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img3:hover{
+	.imgbox3:hover .img3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img4:hover{
+	.imgbox4:hover .img4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox1:hover .imgtext1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox2:hover .imgtext2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox3:hover .imgtext3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox4:hover .imgtext4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.hoverimg{
-		transform: scale(1.0);
-		transition: all 0.5s;
-	}
-	.hoverimg:hover{
-		transform: scale(1.1);
-		transition: all 0.5s;
-	}
 	
 	.side{
 		border: none;
@@ -1284,45 +1275,46 @@
 		transition: all 0.5s;
 	}
 	
-	.img1:hover{
+	.imgbox1:hover .img1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img2:hover{
+	.imgbox2:hover .img2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img3:hover{
+	.imgbox3:hover .img3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
-	.img4:hover{
+	.imgbox4:hover .img4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox1:hover .imgtext1{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox2:hover .imgtext2{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox3:hover .imgtext3{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
 	
 	.imgbox4:hover .imgtext4{
 		opacity: 1;
-		transition: all 0.5s;
+		transition: all 1s;
 	}
+	
 	
 	.hoverimg{
 		transform: scale(1.0);
