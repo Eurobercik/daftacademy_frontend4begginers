@@ -21,6 +21,96 @@
 		position: fixed;
 	}
 	
+	.imgtext1{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext2{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext3{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext4{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.img1{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img2{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img3{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img4{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img1:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img2:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img3:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img4:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox1:hover .imgtext1{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox2:hover .imgtext2{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox3:hover .imgtext3{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox4:hover .imgtext4{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	
+	.hoverimg{
+		transform: scale(1.0);
+		transition: all 0.5s;
+	}
+	.hoverimg:hover{
+		transform: scale(1.1);
+		transition: all 0.5s;
+	}
+	
 	.video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -81,24 +171,43 @@
 		justify-content: center
 	}
 	
+	.svgicon{
+		fill: rgb(159,0,101);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:hover{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:focus{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
 	a:link {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:visited {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:hover {
-		color: #ffffff;
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
-
-	a:active {
-		color: #ffffff;
+	
+	a:focus {
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 	} 
 	
 	.bolded {
@@ -164,6 +273,10 @@
 	address{
 		position: absolute;
 		bottom: 75px;
+		display: flex;  
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
 	}
 
 	.side{
@@ -201,20 +314,80 @@
 	} 
 	
 	.przycisk{
+		box-sizing: content-box;
 		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
 		padding: 5px 16px;
 		color: #ccc8ff;
 		font-size: 13px;
 		letter-spacing: 1.5px;
 		font-family: "Open Sans";
-		border: none;
+		border: 2px solid;
+		border-color: rgb(52,31,67);
 		border-radius: 4px;
 		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:hover{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111); 
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:active{
+		box-sizing: content-box;
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.25s;
+	}
+	
+	.przycisk:focus{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: #ccc8ff;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
 	}
 	
 	.formularz{
 		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
 		padding: 4px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+		
+	.formularz:focus{
+		background-color: rgb(85,51,111); /*Tu również kolor jest jaśniejszy*/
+		padding: 3px;
 		color: #ccc8ff;
 		font-size: 13px;
 		letter-spacing: 1.5px;
@@ -251,6 +424,96 @@
 		font-family: "Helvetica";
 		position: top;
       }
+	
+		
+	.imgtext1{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext2{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext3{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext4{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.img1{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img2{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img3{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img4{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img1:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img2:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img3:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img4:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox1:hover .imgtext1{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox2:hover .imgtext2{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox3:hover .imgtext3{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox4:hover .imgtext4{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.hoverimg{
+		transform: scale(1.0);
+		transition: all 0.5s;
+	}
+	.hoverimg:hover{
+		transform: scale(1.1);
+		transition: all 0.5s;
+	}
 	
 	.side{
 		position: fixed;
@@ -316,24 +579,43 @@
 		justify-content: center
 	}
 	
+	.svgicon{
+		fill: rgb(159,0,101);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:hover{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:focus{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
 	a:link {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:visited {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:hover {
-		color: #ffffff;
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
-
-	a:active {
-		color: #ffffff;
+	
+	a:focus {
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 	} 
 	
 	.bolded {
@@ -397,6 +679,10 @@
 	address{
 		position: absolute;
 		bottom: 75px;
+		display: flex;  
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
 	}
 
 	.side{
@@ -434,20 +720,79 @@
 	} 
 	
 	.przycisk{
+		box-sizing: content-box;
 		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
 		padding: 5px 16px;
 		color: #ccc8ff;
 		font-size: 13px;
 		letter-spacing: 1.5px;
 		font-family: "Open Sans";
-		border: none;
+		border: 2px solid;
+		border-color: rgb(52,31,67);
 		border-radius: 4px;
 		cursor: pointer;
+		transition: all 0.5s;
 	}
 	
+	.przycisk:hover{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111); 
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:active{
+		box-sizing: content-box;
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.25s;
+	}
+	
+	.przycisk:focus{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: #ccc8ff;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
 	.formularz{
 		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
 		padding: 4px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+		
+	.formularz:focus{
+		background-color: rgb(85,51,111); /*Tu również kolor jest jaśniejszy*/
+		padding: 3px;
 		color: #ccc8ff;
 		font-size: 13px;
 		letter-spacing: 1.5px;
@@ -486,6 +831,96 @@
 		justify-content: space-around;
 		align-items: center;
       }
+	
+		
+	.imgtext1{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext2{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext3{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext4{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.img1{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img2{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img3{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img4{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img1:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img2:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img3:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img4:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox1:hover .imgtext1{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox2:hover .imgtext2{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox3:hover .imgtext3{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox4:hover .imgtext4{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.hoverimg{
+		transform: scale(1.0);
+		transition: all 0.5s;
+	}
+	.hoverimg:hover{
+		transform: scale(1.1);
+		transition: all 0.5s;
+	}
 	
 	.side{
 		border: none;
@@ -560,24 +995,43 @@
 		justify-content: center
 	}
 	
+	.svgicon{
+		fill: rgb(159,0,101);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:hover{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:focus{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	 
+	
 	a:link {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:visited {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:hover {
-		color: #ffffff;
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
-
-	a:active {
-		color: #ffffff;
+	
+	a:focus {
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 	} 
 	
 	.bolded {
@@ -639,6 +1093,9 @@
 	}
 	
 	address{
+		display: flex;  
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
 	}
 	
 	.r25{
@@ -670,20 +1127,79 @@
 	} 
 	
 	.przycisk{
+		box-sizing: content-box;
 		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
 		padding: 5px 16px;
 		color: #ccc8ff;
 		font-size: 10px;
 		letter-spacing: 1.2px;
 		font-family: "Open Sans";
-		border: none;
+		border: 2px solid;
+		border-color: rgb(52,31,67);
 		border-radius: 4px;
 		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:hover{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 10px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111); 
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:active{
+		box-sizing: content-box;
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 10px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.25s;
+	}
+	
+	.przycisk:focus{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 10px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: #ccc8ff;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
 	}
 	
 	.formularz{
 		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
 		padding: 4px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+		
+	.formularz:focus{
+		background-color: rgb(85,51,111); /*Tu również kolor jest jaśniejszy*/
+		padding: 3px;
 		color: #ccc8ff;
 		font-size: 13px;
 		letter-spacing: 1.5px;
@@ -727,6 +1243,95 @@
 		justify-content: space-around;
 		align-items: center;
       }
+	  	
+	.imgtext1{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext2{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext3{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.imgtext4{
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	
+	.img1{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img2{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img3{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img4{
+		opacity: 0.5;
+		transition: all 0.5s;
+	}
+	
+	.img1:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img2:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img3:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.img4:hover{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox1:hover .imgtext1{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox2:hover .imgtext2{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox3:hover .imgtext3{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.imgbox4:hover .imgtext4{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	
+	.hoverimg{
+		transform: scale(1.0);
+		transition: all 0.5s;
+	}
+	.hoverimg:hover{
+		transform: scale(1.1);
+		transition: all 0.5s;
+	}
 	
 	.side{
 		border: none;
@@ -801,24 +1406,43 @@
 		justify-content: center
 	}
 	
+	.svgicon{
+		fill: rgb(159,0,101);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:hover{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
+	.svgicon:focus{
+		fill: rgb(224,0,134);
+		transition: all 0.5s;
+	}	
+	
 	a:link {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:visited {
-		color: #ec008c;
+		color: rgb(159,0,101);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
 
 	a:hover {
-		color: #ffffff;
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 		}
-
-	a:active {
-		color: #ffffff;
+	
+	a:focus {
+		color: rgb(224,0,134);
 		text-decoration: none;
+		transition: all 0.5s;
 	} 
 	
 	.bolded {
@@ -908,19 +1532,78 @@
 	} 
 	
 	.przycisk{
+		box-sizing: content-box;
 		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
-		padding: 4px 12px;
+		padding: 5px 16px;
 		color: #ccc8ff;
 		font-size: 7px;
 		letter-spacing: 1.2px;
 		font-family: "Open Sans";
-		border: none;
+		border: 2px solid;
+		border-color: rgb(52,31,67);
 		border-radius: 4px;
 		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:hover{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111); 
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+	
+	.przycisk:active{
+		box-sizing: content-box;
+		background-color: rgb(52,31,67); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: rgb(85,51,111);
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.25s;
+	}
+	
+	.przycisk:focus{
+		box-sizing: content-box;
+		background-color: rgb(85,51,111); /*Zmieniłem kolor bo na nowym tle nie było widać tego przycisku*/
+		padding: 5px 16px;
+		color: #ccc8ff;
+		font-size: 7px;
+		letter-spacing: 1.2px;
+		font-family: "Open Sans";
+		border: 2px solid;
+		border-color: #ccc8ff;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.5s;
 	}
 	
 	.formularz{
 		background-color: rgb(68,40,87); /*Tu również kolor jest jaśniejszy*/
+		padding: 3px;
+		color: #ccc8ff;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		font-family: "Open Sans";
+		border: none;
+		border-radius: 4px;
+	}
+	
+	.formularz:focus{
+		background-color: rgb(85,51,111); /*Tu również kolor jest jaśniejszy*/
 		padding: 3px;
 		color: #ccc8ff;
 		font-size: 13px;
